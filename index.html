@@ -4,10 +4,17 @@
     <title>HTML Tutorial</title>
     <img src="html.png" width="100%" >
     <style>
+        pre{font-size:120%; font-family:courier;}
+        p{font-size:120%; font-family:courier;}
         .Bd  {
             border: 4px solid #DDA0DD;
             color: black;
             background-color: #F5FFFA;
+            font-family:courier;
+            font-size:120%;
+            padding: 30px;
+            margin: 50px;
+            display: table;
         }
     </style>
 </head>
@@ -319,6 +326,115 @@
     </p>
     <hr>
     <h1>HTML Styles</h1>
-    <p> &emsp;เป็นการตกเเต่งหน้าเว็บ เช่น สี ตัวอักษร เเละขนาด เป็นต้น</p>
+    <p> &emsp;เป็นการตกเเต่งหน้าเว็บ เช่น สี, ตัวอักษร เเละขนาด เป็นต้น</p>
+    <h2>The HTML Style Attribute</h2>
+    <pre>
+        เป็นการตกแต่งของ สีพื้นหลัง, สีตัวอักษร, ประเภทตัวอักษร, ขนาดตัวอักษร เเละการจัดตำแหน่งข้อความเป็นต้น โดยจะมีลักษณะการพิมพ์ดังนี้
+                                &lt;tagname style="property: value;"&gt; 
+        - property คือชื่อลักษณะที่ต้องการ ซึ่งจะเป็นภาษา css
+        - value เป็นค่าที่เรากำหนด
+    </pre>
+    <h2>Background Color</h2>
+    <pre>
+        เป็นการกำหนดสีพื้นหลัง ซึ่งจะใช้ property background-color 
+    ตัวอย่าง
+    </pre>
+    <p class ="Bd">
+       &lt;p style="background-color:powderblue;"&gt; This is a paragraph.&lt;/p&gt;
+        </body> 
+    </p>
+    <p>ผลลัพธ์</p>
+    <p class ="Bd" style="background-color:powderblue;" >This is a paragraph.</p>
+    <h2>Text Color</h2>
+    <pre>
+        เป็นการกำหนดสีของตัวอักษร โดยจะใช้ property color 
+    ตัวอย่าง
+    </pre>
+    <p class ="Bd">
+       &lt;p style="color:blue;"&gt; This is a paragraph.&lt;/p&gt;
+        </body> 
+    </p>
+    <p>ผลลัพธ์</p>
+    <p class ="Bd" style="color:blue;" >This is a paragraph.</p>
+    <h2>Fonts</h2>
+    <pre>
+        เป็นการกำหนดประเภทของตัวอักษร โดยจะใช้ property cfont-family
+    ตัวอย่าง
+    </pre>
+    <p class ="Bd">
+       &lt;p style="font-family:courier;"&gt; This is a paragraph.&lt;/p&gt;
+        </body> 
+    </p>
+    <p>ผลลัพธ์</p>
+    <p class ="Bd" style="font-family:courier;" >This is a paragraph.</p>
+    <h2>Text Size</h2>
+    <pre>
+        เป็นการกำหนดขนาดของตัวอักษร โดยจะใช้ property font-size
+    ตัวอย่าง
+    </pre>
+    <p class ="Bd">
+       &lt;p style="font-size:160%;"&gt; This is a paragraph.&lt;/p&gt;
+        </body> 
+    </p>
+    <p>ผลลัพธ์</p>
+    <p class ="Bd" style="font-size:160%;" >This is a paragraph.</p>
+    <h2>Text Alignment</h2>
+    <pre>
+        จะเป็นการจัดตำแหน่งของข้อความ โดยจะใช้ property text-align 
+    ตัวอย่าง
+    </pre>
+    <p class ="Bd">
+       &lt;p style="text-align:center;"&gt; This is a paragraph.&lt;/p&gt;
+        </body> 
+    </p>
+    <p>ผลลัพธ์</p>
+    <p class ="Bd" style="text-align:center;" >This is a paragraph.</p>
+    <h1>HTML Formatting</h1>
+    <p>การกำหนดรูปแบบข้อความ</p>
+    <h2>HTML Formatting Elements</h2>
+    <pre>
+        ในภาษา HTML จะมีการตกแต่งจัดรูปแบบข้อความ โดย Element ที่ใช้มีดังต่อไปนี้
+        - &lt;b&gt; ตัวหนา
+            ตัวอย่าง : &lt;b&gt;ตัวหนา&lt;/b&gt;
+            ผลลัพธ์ : <b>ตัวหนา</b> 
+
+        - &lt;strong&gt; ข้อความสำคัญ
+            ตัวอย่าง : &lt;strong&gt;ข้อความสำคัญ!&lt;/strong&gt;
+            ผลลัพธ์ : <strong>ข้อความสำคัญ!</strong> 
+            
+        - &lt;i&gt; ตัวเอียง
+            ตัวอย่าง : &lt;i&gt;ตัวเอียง&lt;/i&gt;
+            ผลลัพธ์ : <i>ตัวเอียง</i> 
+            
+        - &lt;em&gt; ข้อความเน้น
+            ตัวอย่าง : &lt;em&gt;ข้อความที่เน้น&lt;/em&gt;
+            ผลลัพธ์ : <em>ข้อความที่เน้น</em> 
+            
+        - &lt;mark&gt; ไฮไลท์
+            ตัวอย่าง : &lt;p&gt;ข้อความ&lt;mark&gt;ไฮไลท์ข้อความ&lt;/mark&gt;&lt;/p&gt;
+            ผลลัพธ์ :  ข้อความที่<mark>ไฮไลท์</mark> 
+            
+        - &lt;small&gt;ตัวพิมพ์เล็ก
+            ตัวอย่าง : &lt;small&gt;ตัวพิมพ์เล็ก&lt;/small&gt;
+            ผลลัพธ์ : <small>ตัวพิมพ์เล็ก</small>
+        
+        - &lt;del&gt; ขีดฆ่า
+            ตัวอย่าง : &lt;del&gt;ขีดฆ่าข้อความ&lt;/del&gt;
+            ผลลัพธ์ : <del>ขีดฆ่าข้อความ</del> 
+        - &lt;ins&gt; ข้อความแทรก
+            ตัวอย่าง : &lt;ins&gt;ข้อความแทรก&lt;/ins&gt;
+            ผลลัพธ์ : <ins>ข้อความแทรก</ins>
+           
+        - &lt;sub&gt; ตัวห้อย
+            ตัวอย่าง : &lt;p&gt;ข้อความ&lt;sub&gt;ตัวห้อย&lt;/sub&gt;&lt;/p&gt;
+            ผลลัพธ์ : ข้อความ<sub>ตัวห้อย</sub> text.
+            
+        - &lt;sup&gt; ตัวยก
+            ตัวอย่าง : &lt;p&gt;ข้อความ&lt;sup&gt;ตัวยก&lt;/sup&gt;&lt;/p&gt;
+            ผลลัพธ์ : ข้อความ<sup>ตัวยก</sup> text.</p>
+            
+    </pre>
+    <h2>HTML Formatting Elements</h2>
+</body>
 </body>
 </html>
