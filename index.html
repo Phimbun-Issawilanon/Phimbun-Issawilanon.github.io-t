@@ -293,6 +293,57 @@
         </table> 
     </p>
     </p>
+    <h2>HTML Display</h2>
+    <p>
+        การเเสดงผล HTML จะขึ้นอยู่กับหน้าจอเมื่อเราเว้นววรค(Spac bar) หรือเว้นบรรทัด(Enter)หลายๆ ครั้ง ตัวเบราว์เซอร์จะทำการตัดช่องว่างหรือบรรทัดที่เกินออกไป <br>
+        ตัวอย่าง<br>
+        <table width=20% border = "1px" bgcolor ="#DDA0DD">
+            <tr>
+                <td border = "1px" bgcolor ="#F5FFFA"  >
+                <p>
+                    &emsp; &lt;p&gt;<br> 
+                    &emsp;This paragraph <br>
+                    &emsp;contains a lot of lines<br>
+                    &emsp;in the source code,<br>
+                    &emsp;but the browser<br>
+                    &emsp;ignores it. <br>
+                    &emsp;&lt;/p&gt; <br><br>
+                    &emsp;&lt;p&gt; <br>
+                    &emsp;This paragraph<br>
+                    &emsp;contains         a lot of spaces<br>
+                    &emsp;in the source         code,<br>
+                    &emsp;but the        browser<br>
+                    &emsp;ignores it. <br>
+                    &emsp;&lt;/p&gt;
+                </p>  
+                </td>
+            </tr>
+        </table> 
+    </p>
+    <p>ผลลัพธ์ จะเห็นได้ว่าทั้ง 2 แบบจะได้ผลลัพธ์ รูปประโยคที่เหมือนกันดังนี้<br>
+        <table width=40% border = "1px" bgcolor ="#DDA0DD">
+            <tr>
+                <td border = "1px" bgcolor ="#F5FFFA"  >
+                    <p>
+                        This paragraph
+                        contains a lot of lines
+                        in the source code,
+                        but the browser
+                        ignores it.
+                        </p>
+                        
+                        <p>
+                        This paragraph
+                        contains         a lot of spaces
+                        in the source         code,
+                        but the        browser
+                        ignores it.
+                        </p> 
+                </td>
+            </tr>
+        </table> 
+    </p>
+    </p>
 
 </body>
 </html>
