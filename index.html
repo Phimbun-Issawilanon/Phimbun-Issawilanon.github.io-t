@@ -427,8 +427,101 @@ Oh, bring back my Bonnie to me.
         - &lt;sup&gt; ตัวยก
             ตัวอย่าง : &lt;p&gt;ข้อความ&lt;sup&gt;ตัวยก&lt;/sup&gt;&lt;/p&gt;
             ผลลัพธ์ : ข้อความ<sup>ตัวยก</sup> text.</p>
-
     </pre>
+    <h1>HTML Quotation</h1>
+    <p>&emsp;ข้อความอ้างอิง</p>
+    <h2>HTML &lt;blockquote&gt; for Quotations</h2>
+    <p>กล่องข้อความอ้างอิง ตัว &lt;blockquote&gt; เป็นการอ้างอิงข้อความที่มาจากแหล่งอื่น เบราเซอร์จะจัดย่อหน้าให้ <br>
+    ตัวอย่าง
+    </p>
+<pre class="Bd">
+&lt;p&gt;Here is a quote from WWF's website:&lt;/p&gt;
+&lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+&lt;/blockquote&gt;
+</pre>
+<p>ผลลัพธ์</p>
+<pre class="Bd">
+Here is a quote from WWF's website:
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+</pre>
+    <h2>HTML &lt;q&gt;for Short Quotations</h2>
+    <p>&emsp; เป็นข้อความอ้างอิงสั้นๆ หรือประโยคคำพูด ที่เรียกว่า Quote มีสัญลักษณ์เป็น Double-Quote(") โดยจะใช้ &lt;q&gt; <br>
+    ตัวอย่าง
+    </p>
+<pre class = "Bd">
+&lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;&lt;/p&gt;
+</pre>
+<p>ผลลัพธ์</p>
+<pre class="Bd">
+WWF's goal is to: <q>Build a future where people live in harmony with nature.</q>
+</pre>
+    <h2>HTML &lt;abbr&gt; for Abbreviations</h2>
+    <p>&emsp;&lt;abbr&gt; จะใช้กับตัวย่อ เมื่อเลื่อนเมาส์ไปวางจะเเสดงข้อความใน title <br>
+    ตัวอย่าง
+    </p>
+<pre class="Bd">
+&lt;p&gt;The &lt; abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+</pre>
+<p>ผลลัพธ์</p>
+<pre class="Bd">
+The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+</pre>
+    <h2>HTML &lt;address&gt; for Contact Information</h2>
+    <p>&emsp;&lt;address&gt; จะใช้กับการระบุข้อความการติดต่อสื่อสาร ซึ่งจะแสดงผลเป็นตัวเอียง เเละขะมีการเว้นช่องว่างบรรทัดให้ <br>
+    ตัวอย่าง
+    </p>
+<pre class="Bd">
+&lt;address&gt;
+Written by John Doe.&lt;br&gt;
+Visit us at:&lt;br&gt;
+Example.com&lt;br&gt;
+Box 564, Disneyland&lt;br&gt;
+USA
+&lt;/address&gt;
+</pre>
+<p>ผลลัพธ์</p>
+<pre class="Bd">
+<address>
+Written by John Doe.
+Visit us at:
+Example.com
+Box 564, Disneyland
+USA
+</address> 
+</pre>
+<h2>HTML &lt;cite&gt; for Work Title</h2>
+    <p>&emsp;&lt;cite&gt; จะใช้ระบุชื่องาน ซึ่งจะเเสดงผลเป็นตัวเอียง <br>
+    ตัวอย่าง
+    </p>
+<pre class="Bd">
+&lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.&lt;/p&gt;
+</pre>
+<p>ผลลัพธ์</p>
+<pre class="Bd">
+<cite>The Scream</cite> by Edvard Munch. Painted in 1893.
+</pre>
+<h2>HTML &lt;bdo&gt; Bi-Directional Override</h2>
+    <p>&emsp;&lt;bdo&gt; จะใช้กำหนดข้อความให้สลับข้าง โดยจะระบุใน Attribute dir <br>
+    ตัวอย่าง
+    </p>
+<pre class="Bd">
+&lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo>&gt;
+</pre>
+<p>ผลลัพธ์</p>
+<pre class="Bd">
+<bdo dir="rtl">This text will be written from right to left</bdo> 
+</pre>
 </body>
 </body>
 </html>
