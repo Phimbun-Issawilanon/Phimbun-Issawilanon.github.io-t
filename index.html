@@ -3,7 +3,13 @@
 <head>
     <title>HTML Tutorial</title>
     <img src="html.png" width="100%" >
-
+    <style>
+        .Bd  {
+            border: 4px solid #DDA0DD;
+            color: black;
+            background-color: #F5FFFA;
+        }
+    </style>
 </head>
 <body bgcolor="#F5F5F5"> 
     <p> &emsp;HTML ย่อมาจาก Hypertext Markup Language ซึ่งเป็นภาษาคอมพิวเตอร์ที่ไว้ใช้เเสดงผลในเว็บบราวเซอร์</p> <!--&emsp; คือย่อหน้า-->
@@ -21,11 +27,8 @@
     <h2>Nested HTML Elements</h2>
     <p>
         &emsp;ภายใน Elements สามารถมี Elements อื่นๆ ซ้อนอยู่ได้ แต่ต้องระวังในการจัดลำดับ Tag เปิดและปิดให้ถูกต้อง <br>
-        ตัวอย่าง <br>
-        <table width=20% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>
+        ตัวอย่าง 
+            <p class="Bd">
                     &emsp; &lt;!DOCTYPE html&gt; <br>
                     &emsp; &lt;html&gt; <br>
                     &emsp; &lt;body&gt; <br><br>
@@ -33,10 +36,8 @@
                     &emsp; &lt;p&gt; My first paragraph&lt;p&gt;<br><br>
                     &emsp; &lt;/body&gt; <br>
                     &emsp; &lt;/html&gt;  <br>
-                </p>
-                </td>
-            </tr>
-        </table> 
+            </p>
+            
         &emsp; จากตัวอย่างข้างต้น จะมี Tag เปิด &lt;html&gt; และ tag ปิด &lt;/html&gt; เสมอ ซึ่งเป็นการระบุว่าเป็น HTML
         ในส่วนของ &lt;body&gt; จะเป็นการระบุของเนื้อหาที่จะเเสดงผล โดยจะมี Tag เปิด &lt;body&gt; และ tag ปิด &lt;/body&gt; เสมอ 
         และ Elements ที่ระบุรูปแบบเเสดงผล จะมี &lt;h1&gt; เป็นการระบุหัวข้อ โดยจะมี Tag เปิด &lt;h1&gt; และ tag ปิด &lt;/h1&gt; เสมอ 
@@ -45,36 +46,24 @@
     <h2>Never Skip the End Tag</h2>
     <p>
         &emsp; ในบางครั้งที่มีการลืมปิด Tag แต่ก็ยังที่จะสามารถแสดงผลได้ถูกต้อง แต่ในทางที่ดีที่สุดควรระมัดระวังไม่ให้ลืม เพื่อไม่ให้เกิดข้อผิดพลาดได้ <br>
-        ตัวอย่าง<br>
-        <table width=20% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>
-                    &emsp; &lt;!DOCTYPE html&gt; <br>
-                    &emsp; &lt;html&gt; <br>
-                    &emsp; &lt;body&gt; <br><br>
-                    &emsp; &lt;h1&gt; My First Heading <br>
-                    &emsp; &lt;p&gt; My first paragraph<br><br>
-                    &emsp; &lt;/body&gt; <br>
-                    &emsp; &lt;/html&gt;  <br>
-                </p>
-                </td>
-            </tr>
-        </table> 
+        ตัวอย่าง
+            <p class="Bd">
+                &emsp; &lt;!DOCTYPE html&gt; <br>
+                &emsp; &lt;html&gt; <br>
+                &emsp; &lt;body&gt; <br><br>
+                &emsp; &lt;h1&gt; My First Heading <br>
+                &emsp; &lt;p&gt; My first paragraph<br><br>
+                &emsp; &lt;/body&gt; <br>
+                &emsp; &lt;/html&gt;  <br>
+            </p>
     </p>
     <h2>Empty HTML Elements</h2>
     <p>
         &emsp;คือ HTML Elements ที่ไม่มีเนื้อหา เช่น &lt;br&gt; ที่ไว้ใช้ในการเว้นบรรทัด ซึ่งจะไม่มี Tag ปิด<br>
-        ตัวอย่าง<br>
-        <table width=25% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>
-                    &emsp; &lt;p&gt; This is a &lt;br&gt; paragraph with a line break.
-                </p>
-                </td>
-            </tr>
-        </table> 
+        ตัวอย่าง
+        <p class="Bd">
+            &emsp; &lt;p&gt; This is a &lt;br&gt; paragraph with a line break.
+        </p>
     </p>
     <h2>HTML is Not Case Sensitive</h2>
     <p>
@@ -86,161 +75,97 @@
     <h2>The href Attribute</h2>
     <p>
         &emsp;ในการเชื่อมโยงข้อมูลใส่ลิงก์นั้น จะมีการระบุ Tag &lt;a&gt; โดยมี Attribute href เพื่อใส่ url ลิงก์ในนั้น<br>
-        ตัวอย่าง<br>
-        <table width=30% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>
-                    &emsp; &lt;a href="https://www.w3schools.com" &gt; Visit W3Schools &lt;/a&gt; 
-                </p>
-                </td>
-            </tr>
-        </table> 
-        <p>ผลลัพธ์<br>
-            <table width=13% border = "1px" bgcolor ="#DDA0DD">
-                <tr>
-                    <td border = "1px" bgcolor ="#F5FFFA"  >
-                        &emsp; &emsp; <a href="https://www.w3schools.com">Visit W3Schools</a> 
-                    </td>
-                </tr>
-            </table> 
+        ตัวอย่าง
+        <p class="Bd">
+            &emsp; &lt;a href="https://www.w3schools.com" &gt; Visit W3Schools &lt;/a&gt; 
         </p>
-    </p>
+        <p>ผลลัพธ์
+            <p class="Bd">
+                &emsp; &emsp; <a href="https://www.w3schools.com">Visit W3Schools</a> 
+            </p>
+        </p>
     <h2>The src Attribute</h2>
     <p>
         &emsp;ในการใส่รูปภาพนั้น จะมีการระบุ Tag &lt;img&gt; โดยมี Attribute src เพื่อทำการระบุไฟล์รูปภาพในนั้น หรือเราสามารถใส่ระบุเป็นลิงก์ของรูปภาพได้<br>
-        ตัวอย่าง<br>
-        <table width=16% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>
-                    &emsp; &lt;img src="doraemon2.jpg" &gt; 
-                </p>
-                </td>
-            </tr>
-        </table> 
-        <p>ผลลัพธ์<br>
-            <table width=13.5% border = "1px" bgcolor ="#DDA0DD">
-                <tr>
-                    <td border = "1px" bgcolor ="#F5FFFA"  >
-                        <img src="doraemon2.jpg" > 
-                    </td>
-                </tr>
-            </table> 
-        </p>
+        ตัวอย่าง
+            <p class="Bd">
+                &emsp; &lt;img src="doraemon2.jpg" &gt; 
+            </p>
     </p>
+        <p>ผลลัพธ์
+            <p class="Bd">
+                <img src="doraemon2.jpg" > 
+                   
+            </p>
+        </p>
     <h2>The width and height Attributes</h2>
     <p>
         &emsp;ภายใน Tag &lt;img&gt; เราสามารถระบุขนาดของไฟล์รูปภาพได้ใน Attribute width, height<br>
-        ตัวอย่าง<br>
-        <table width=30% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>
+        ตัวอย่าง
+            <p class="Bd">
                     &emsp; &lt;img src="doraemon.jpg" width="200" height="200" &gt; 
-                </p>
-                </td>
-            </tr>
-        </table> 
-        <p>ผลลัพธ์<br>
-            <table width=13.5% border = "1px" bgcolor ="#DDA0DD">
-                <tr>
-                    <td border = "1px" bgcolor ="#F5FFFA"  >
-                        &emsp;<img src="doraemon.jpg" width="200" height="200" > 
-                    </td>
-                </tr>
-            </table> 
+            </p>
+    </p>
+        <p>ผลลัพธ์
+            <p class="Bd">
+                &emsp;<img src="doraemon.jpg" width="200" height="200" > 
+            </p>
         </p>
     </p>
     <h2>The alt Attribute</h2>
     <p>
         &emsp;เป็นการแสดงข้อความในกรณีที่โหลดรูปภาพไม่ขึ้น<br>
-        ตัวอย่าง<br>
-        <table width=25% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>
-                    &emsp; &lt;img src="doraemon3.jpg" alt="Doraemon" &gt; 
-                </p>
-                </td>
-            </tr>
-        </table> 
-        <p>ผลลัพธ์<br>
-            <table width=10% border = "1px" bgcolor ="#DDA0DD">
-                <tr>
-                    <td border = "1px" bgcolor ="#F5FFFA"  >
-                        &emsp;<img src="doraemon3.jpg" alt="Doraemon" >
-                    </td>
-                </tr>
-            </table> 
+        ตัวอย่าง
+            <p class="Bd">
+                &emsp; &lt;img src="doraemon3.jpg" alt="Doraemon" &gt; 
+            </p>
+    </p>
+        <p>ผลลัพธ์
+            <p class="Bd">
+                &emsp;<img src="doraemon3.jpg" alt="Doraemon" >
+            </p>
         </p>
     </p>
     <h2>The style Attribute</h2>
     <p>
         &emsp;เป็นการตกแต่งหน้าเว็บ เช่น สี ขนาด ตัวอักษร เป็นต้น โดยกำหนดที่ Attribute style<br>
-        ตัวอย่าง<br>
-        <table width=25% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>
-                    &emsp; &lt;style="color:red;"&gt;This is a red paragraph.&lt;/p&gt; 
-                </p>
-                </td>
-            </tr>
-        </table> 
-        <p>ผลลัพธ์<br>
-            <table width=13% border = "1px" bgcolor ="#DDA0DD">
-                <tr>
-                    <td border = "1px" bgcolor ="#F5FFFA"  >
-                        <p style="color:red;">This is a red paragraph.</p> 
-                    </td>
-                </tr>
-            </table> 
+        ตัวอย่าง
+            <p class="Bd">
+                &emsp; &lt;style="color:red;"&gt;This is a red paragraph.&lt;/p&gt; 
+            </p>
+    </p>
+        <p>ผลลัพธ์
+            <p class="Bd"  style="color:red;">This is a red paragraph.</p> 
         </p>
     </p>
     <h2>The lang Attribute</h2>
     <p>
         &emsp;เป็นการระบุภาษาที่ใช้ในเว็บ โดยกำหนดที่ Attribute lang ไว้ใน Tag &lt;html&gt; <br>
-        ตัวอย่าง<br>
-        <table width=15% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>
-                    &emsp; &lt;!DOCTYPE html&gt; <br>
-                    &emsp; &lt;html lang="en"&gt; <br>
-                    &emsp; &lt;body&gt; <br>
-                    &emsp; &lt;h1&gt; ... <br>
-                    &emsp; &lt;/body&gt; <br>
-                    &emsp; &lt;/html&gt;  <br>
-                </p>  
-                </td>
-            </tr>
-        </table> 
+        ตัวอย่าง
+            <p class="Bd">
+                &emsp; &lt;!DOCTYPE html&gt; <br>
+                &emsp; &lt;html lang="en"&gt; <br>
+                &emsp; &lt;body&gt; <br>
+                &emsp; &lt;h1&gt; ... <br>
+                &emsp; &lt;/body&gt; <br>
+                &emsp; &lt;/html&gt;  <br>
+            </p>  
     </p>
     <h2>The title Attribute</h2>
     <p>
         &emsp; เมื่อกำหนด Attribute title ไว้ใน Tag ค่าของ title ที่เราใส่ไว้ คำอธิบายเพิ่มเติมจะเเสดงเมื่อเราเอาเม้าส์ไปวางไว้บน Elements &lt;p&gt; <br>
-        ตัวอย่าง<br>
-        <table width=25% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>
-                    &emsp; &lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt; 
-                </p>  
-                </td>
-            </tr>
-        </table> 
+        ตัวอย่าง
+            <p class="Bd">
+                &emsp; &lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt; 
+            </p>  
     </p>
     <h2>Single or Double Quotes?</h2>
     <p> &emsp; สามารใช้ Single หรือ Double Quotes ก็ได้ เเต่ส่วนมากจะนิยมใช้ Double Quotes</p>
     <hr>
     <h1>HTML Headings</h1>
     <p> การสร้างหัวข้อ โดยระบุ Tag &lt;h1&gt;(หัวข้อใหญ่สุด) ถึง &lt;h6&gt;(หัวข้อเล็กสุด)<br>
-        ตัวอย่าง<br>
-        <table width=15% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>
+        ตัวอย่าง
+            <p class="Bd">
                     &emsp; &lt;h1&gt;This is header 1&lt;/h1&gt;<br>
                     &emsp; &lt;h2&gt;This is header 2&lt;/h2&gt;<br>
                     &emsp; &lt;h3&gt;This is header 3&lt;/h3&gt;<br>
@@ -248,20 +173,18 @@
                     &emsp; &lt;h5&gt;This is header 5&lt;/h5&gt;<br>
                     &emsp; &lt;h6&gt;This is header 6&lt;/h6&gt;<br>
                 </p>  
-                </td>
-            </tr>
-        </table> 
+    </p>
         <p>ผลลัพธ์<br>
-            <table width=20% border = "1px" bgcolor ="#DDA0DD">
+            <table width=100% border = "1px" bgcolor ="#DDA0DD">
                 <tr>
                     <td border = "1px" bgcolor ="#F5FFFA"  >
+            
                         <h1>This is header 1</h1>
                         <h2>This is header 2</h2>
                         <h3>This is header 3</h3>
                         <h4>This is header 4</h4>
                         <h5>This is header 5</h5>
                         <h6>This is header 6</h6>
-                        
                     </td>
                 </tr>
             </table> 
@@ -270,80 +193,109 @@
     <h1>HTML Paragraphs</h1>
     <p>
         การที่เราระบุ Tag &lt;p&gt; เป็นการระบุย่อหน้า ซึ่งจะทำการเพิ่มบรรทัดว่างก่อนและหลังเนื้อหาที่เราพิมพ์ <br>
-        ตัวอย่าง<br>
-        <table width=20% border = "1px" bgcolor ="#DDA0DD">
+        ตัวอย่าง
+            <p class="Bd">
+                &emsp; &lt;p&gt; This is a paragraph. &lt;/p&gt; <br>
+                &emsp; &lt;p&gt; This is another paragraph. &lt;/p&gt;
+            </p>  
+    </p>
+    <p>ผลลัพธ์
+        <table width=100% border = "1px" bgcolor ="#DDA0DD">
             <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>
-                    &emsp; &lt;p&gt; This is a paragraph. &lt;/p&gt; <br>
-                    &emsp; &lt;p&gt; This is another paragraph. &lt;/p&gt;
-                </p>  
-                </td>
+            <td border = "1px" bgcolor ="#F5FFFA"  >
+                <p>This is a paragraph.</p>
+                <p>This is another paragraph.</p> 
+            </td>
             </tr>
         </table> 
-    </p>
-    <p>ผลลัพธ์<br>
-        <table width=20% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                    <p>This is a paragraph.</p>
-                    <p>This is another paragraph.</p> 
-                </td>
-            </tr>
-        </table> 
-    </p>
     </p>
     <h2>HTML Display</h2>
     <p>
         การเเสดงผล HTML จะขึ้นอยู่กับหน้าจอเมื่อเราเว้นววรค(Spac bar) หรือเว้นบรรทัด(Enter)หลายๆ ครั้ง ตัวเบราว์เซอร์จะทำการตัดช่องว่างหรือบรรทัดที่เกินออกไป <br>
-        ตัวอย่าง<br>
-        <table width=20% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>
-                    &emsp; &lt;p&gt;<br> 
-                    &emsp;This paragraph <br>
-                    &emsp;contains a lot of lines<br>
-                    &emsp;in the source code,<br>
-                    &emsp;but the browser<br>
-                    &emsp;ignores it. <br>
-                    &emsp;&lt;/p&gt; <br><br>
-                    &emsp;&lt;p&gt; <br>
-                    &emsp;This paragraph<br>
-                    &emsp;contains         a lot of spaces<br>
-                    &emsp;in the source         code,<br>
-                    &emsp;but the        browser<br>
-                    &emsp;ignores it. <br>
-                    &emsp;&lt;/p&gt;
-                </p>  
-                </td>
-            </tr>
-        </table> 
+        ตัวอย่าง
+            <p class="Bd">
+                &emsp; &lt;p&gt;<br> 
+                &emsp;This paragraph <br>
+                &emsp;contains a lot of lines<br>
+                &emsp;in the source code,<br>
+                &emsp;but the browser<br>
+                &emsp;ignores it. <br>
+                &emsp;&lt;/p&gt; <br><br>
+                &emsp;&lt;p&gt; <br>
+                &emsp;This paragraph<br>
+                &emsp;contains         a lot of spaces<br>
+                &emsp;in the source         code,<br>
+                &emsp;but the        browser<br>
+                &emsp;ignores it. <br>
+                &emsp;&lt;/p&gt;
+            </p>  
     </p>
     <p>ผลลัพธ์ จะเห็นได้ว่าทั้ง 2 แบบจะได้ผลลัพธ์ รูปประโยคที่เหมือนกันดังนี้<br>
-        <table width=40% border = "1px" bgcolor ="#DDA0DD">
+        <table width=100% border = "1px" bgcolor ="#DDA0DD">
             <tr>
-                <td border = "1px" bgcolor ="#F5FFFA"  >
-                    <p>
-                        This paragraph
-                        contains a lot of lines
-                        in the source code,
-                        but the browser
-                        ignores it.
-                        </p>
+            <td border = "1px" bgcolor ="#F5FFFA"  >
+                <p>
+                This paragraph
+                contains a lot of lines
+                in the source code,
+                but the browser
+                ignores it.
+                </p>
                         
-                        <p>
-                        This paragraph
-                        contains         a lot of spaces
-                        in the source         code,
-                        but the        browser
-                        ignores it.
-                        </p> 
-                </td>
+                <p>
+                This paragraph
+                contains         a lot of spaces
+                in the source         code,
+                but the        browser
+                ignores it.
+                 </p> 
+            </td>
             </tr>
         </table> 
     </p>
+    <h2>HTML Horizontal Rules</h2>
+    <p>
+        การเเสดงผล HTML จะขึ้นอยู่กับหน้าจอเมื่อเราเว้นววรค(Spac bar) หรือเว้นบรรทัด(Enter)หลายๆ ครั้ง ตัวเบราว์เซอร์จะทำการตัดช่องว่างหรือบรรทัดที่เกินออกไป <br>
+        ตัวอย่าง
+        <p class="Bd">
+            &emsp; &lt;p&gt;<br> 
+            &emsp;This paragraph <br>
+            &emsp;contains a lot of lines<br>
+            &emsp;in the source code,<br>
+            &emsp;but the browser<br>
+            &emsp;ignores it. <br>
+            &emsp;&lt;/p&gt; <br><br>
+            &emsp;&lt;p&gt; <br>
+            &emsp;This paragraph<br>
+            &emsp;contains         a lot of spaces<br>
+            &emsp;in the source         code,<br>
+            &emsp;but the        browser<br>
+            &emsp;ignores it. <br>
+            &emsp;&lt;/p&gt;
+        </p>  
     </p>
-
+    <p>ผลลัพธ์ จะเห็นได้ว่าทั้ง 2 แบบจะได้ผลลัพธ์ รูปประโยคที่เหมือนกันดังนี้<br>
+        <table width=100% border = "1px" bgcolor ="#DDA0DD">
+        <tr>
+        <td border = "1px" bgcolor ="#F5FFFA"  >
+            <p>
+            This paragraph
+            contains a lot of lines
+            in the source code,
+            but the browser
+            ignores it.
+            </p>
+                        
+            <p>
+            This paragraph
+            contains         a lot of spaces
+            in the source         code,
+            but the        browser
+            ignores it.
+            </p> 
+        </td>
+        </tr>
+        </table> 
+    </p>
 </body>
 </html>
