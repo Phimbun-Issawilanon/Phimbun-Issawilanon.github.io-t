@@ -6,6 +6,15 @@
     <style>
         pre{font-size:120%; font-family:courier;}
         p{font-size:120%; font-family:courier;}
+        h1{color: white; 
+            background-color: #052f44; 
+            padding: 10px;
+            
+            display: block}
+        h2{color: black; 
+            background-color: #f2f3b7; 
+            padding: 10px;
+            display: inline-block;}
         .Bd  {
             border: 4px solid #DDA0DD;
             color: black;
@@ -16,11 +25,20 @@
             margin: 50px;
             display: table;
         }
+        .Bl{
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 40px;
+            display: block;
+            width: 70%;
+}
+        }
     </style>
 </head>
-<body bgcolor="#F5F5F5"> 
-    <p> &emsp;HTML ย่อมาจาก Hypertext Markup Language ซึ่งเป็นภาษาคอมพิวเตอร์ที่ไว้ใช้เเสดงผลในเว็บบราวเซอร์</p> <!--&emsp; คือย่อหน้า-->
+<body bgcolor = "#b8b3b"> 
+    <p class="Bl"> &emsp;HTML ย่อมาจาก Hypertext Markup Language ซึ่งเป็นภาษาคอมพิวเตอร์ที่ไว้ใช้เเสดงผลในเว็บบราวเซอร์</p> <!--&emsp; คือย่อหน้า-->
     <h1>HTML Elements</h1>
+    <div class="Bl">
     <p> ใน html จะประกอบไปด้วย elements หลายๆ ตัว โดยที่จะต้องมี Tag เปิดและปิด <br> 
         &emsp;- Tag เปิดจะมีชื่อ elements ในเครื่องหมาย &lt;...&gt; <br>  <!-- &lt; คือ < และ &gt; คือ > -->
         &emsp;- Tag ปิดจะเหมือน Tag เปิดแต่จะมี forward slash เป็นตัวบอกจุดสิ้นสุด ดังนี้ &lt;/...&gt; 
@@ -76,8 +94,10 @@
     <p>
         &emsp;การใช้ Tag ตัวพิมพ์เล็กหรือตัวพิมพ์ใหญ่ จะไม่มีผลต่อการเเสดงผล ซึ่งส่วนมากจะนิยมใช้ตัวพิมพ์เล็ก
     </p>
+</div>
     <hr>
     <h1>HTML Attributes</h1>
+    <div class="Bl">
     <p> Attributes เป็นการระบุข้อมูลเพิ่มเติมของ Elements โดยจะระบุชื่อและค่า( name="value")ใน Tag เปิดเท่านั้น</p>
     <h2>The href Attribute</h2>
     <p>
@@ -168,8 +188,10 @@
     </p>
     <h2>Single or Double Quotes?</h2>
     <p> &emsp; สามารใช้ Single หรือ Double Quotes ก็ได้ เเต่ส่วนมากจะนิยมใช้ Double Quotes</p>
+    </div>
     <hr>
     <h1>HTML Headings</h1>
+    <div class="Bl">
     <p> การสร้างหัวข้อ โดยระบุ Tag &lt;h1&gt;(หัวข้อใหญ่สุด) ถึง &lt;h6&gt;(หัวข้อเล็กสุด)<br>
         ตัวอย่าง
             <p class="Bd">
@@ -192,6 +214,9 @@
             </pre>
         </p>
     </p>
+</div>
+    <hr>
+    <div class="Bl">
     <h1>HTML Paragraphs</h1>
     <p>
         การที่เราระบุ Tag &lt;p&gt; เป็นการระบุย่อหน้า ซึ่งจะทำการเพิ่มบรรทัดว่างก่อนและหลังเนื้อหาที่เราพิมพ์ <br>
@@ -319,8 +344,10 @@ Oh, bring back my Bonnie to me.
 </pre> 
         </p>
     </p>
+</div>
     <hr>
     <h1>HTML Styles</h1>
+    <div class="Bl">
     <p> &emsp;เป็นการตกเเต่งหน้าเว็บ เช่น สี, ตัวอักษร เเละขนาด เป็นต้น</p>
     <h2>The HTML Style Attribute</h2>
     <pre>
@@ -384,7 +411,10 @@ Oh, bring back my Bonnie to me.
     </p>
     <p>ผลลัพธ์</p>
     <p class ="Bd" style="text-align:center;" >This is a paragraph.</p>
+</div>
+    <hr>
     <h1>HTML Formatting</h1>
+    <div class="Bl">
     <p>การกำหนดรูปแบบข้อความ</p>
     <h2>HTML Formatting Elements</h2>
     <pre>
@@ -428,7 +458,10 @@ Oh, bring back my Bonnie to me.
             ตัวอย่าง : &lt;p&gt;ข้อความ&lt;sup&gt;ตัวยก&lt;/sup&gt;&lt;/p&gt;
             ผลลัพธ์ : ข้อความ<sup>ตัวยก</sup> text.</p>
     </pre>
+</div>
+    <hr>
     <h1>HTML Quotation</h1>
+    <div class="Bl">
     <p>&emsp;ข้อความอ้างอิง</p>
     <h2>HTML &lt;blockquote&gt; for Quotations</h2>
     <p>กล่องข้อความอ้างอิง ตัว &lt;blockquote&gt; เป็นการอ้างอิงข้อความที่มาจากแหล่งอื่น เบราเซอร์จะจัดย่อหน้าให้ <br>
@@ -522,12 +555,18 @@ USA
 <pre class="Bd">
 <bdo dir="rtl">This text will be written from right to left</bdo> 
 </pre>
+</div>
+<hr>
 <h1>HTML Comment</h1>
+<div class="Bl">
 <pre> 
     คอมเมนต์ ในการอธิบายโค้ดเพิ่มเติมเพื่อให้เข้าใจ โดยจะไม่มีผลต่อการแสดงผลบนเว็บ โดยจะมีลักษณะการพิมพ์ดังนี้
                             &lt;!-- คอมเม้นท์--&gt;
 </pre>
-<h2>HTML Colors</h2>
+</div>
+<hr>
+<h1>HTML Colors</h1>
+<div class="Bl">
 <pre> 
     เราสามารถกำหนดสีได้ 3 วิธีดังนี้
     - ชื่อสี 
@@ -540,6 +579,7 @@ USA
         ตัวอย่าง : &lt;p style="color: #FF0000;"&gt;ข้อความนี้สีแดง&lt;/p&gt;
         ผลลัพธ์ : <i style="color: #FF0000;">ข้อความนี้สีแดง</i>
 </pre>
+</div>
 </body>
 </body>
 </html>
