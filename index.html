@@ -30,9 +30,14 @@
             padding: 20px;
             margin: 40px;
             display: block;
-            width: 70%;
-}
+            width: 75%;
         }
+        .g{
+            color: black;
+            background-color: #F5FFFA;
+            font-family:courier;
+        }
+        
     </style>
 </head>
 <body bgcolor = "#b8b3b"> 
@@ -205,8 +210,8 @@
     </p>
         <p>ผลลัพธ์<br>
             <pre class = "Bd">
-                <h1>This is header 1</h1>
-                <h2>This is header 2</h2>
+                <h1 class ="g">This is header 1</h1>
+<h2 class ="g">This is header 2</h2>
                 <h3>This is header 3</h3>
                 <h4>This is header 4</h4>
                 <h5>This is header 5</h5>
@@ -226,16 +231,11 @@
                 &emsp; &lt;p&gt; This is another paragraph. &lt;/p&gt;
             </p>  
     </p>
-    <p>ผลลัพธ์<br>
-        <table width=25% border = "1px" bgcolor ="#DDA0DD">
-            <tr>
-            <td border = "1px" bgcolor ="#F5FFFA"  >
-                <p>This is a paragraph.</p>
-                <p>This is another paragraph.</p>
-            </td>
-        </tr>
-    </table> 
-    </p>
+    <p>ผลลัพธ์</p>
+    <div class="Bd">
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+    </div>
     <h2>HTML Display</h2>
     <p>
         การเเสดงผล HTML จะขึ้นอยู่กับหน้าจอเมื่อเราเว้นววรค(Spac bar) หรือเว้นบรรทัด(Enter)หลายๆ ครั้ง ตัวเบราว์เซอร์จะทำการตัดช่องว่างหรือบรรทัดที่เกินออกไป <br>
@@ -297,10 +297,10 @@
         <table width=100% border = "1px" bgcolor ="#DDA0DD">
         <tr>
         <td border = "1px" bgcolor ="#F5FFFA"  >
-             <h1>This is heading 1</h1>
+             <h1 class="g">This is heading 1</h1>
              <p>This is some text.</p>
              <hr>
-             <h2>This is heading 2</h2>
+             <h2 class="g">This is heading 2</h2>
              <p>This is some other text.</p>
              <hr>
         </td>
@@ -578,6 +578,137 @@ USA
     - ค่าHex
         ตัวอย่าง : &lt;p style="color: #FF0000;"&gt;ข้อความนี้สีแดง&lt;/p&gt;
         ผลลัพธ์ : <i style="color: #FF0000;">ข้อความนี้สีแดง</i>
+</pre>
+</div>
+<h1>HTML CSS</h1>
+<div class="Bl">
+<pre> 
+    css ย่อมาจาก  Cascading Style Sheets โดยจะทำหน้าที่บ่งบอกรูปการเเสดงผล 
+<h2>Inline CSS</h2>
+    จะตกแต่งแค่ Element นั้นๆ อันเดียว โดยกำหนดค่าใน Attribute style
+ตัวอย่าง
+<pre class="Bd">
+    &lt;h1 style="color:blue;"&gt;A Blue Heading&lt;/h1&gt;
+    &lt;p style="color:red;&gt;>A red paragraph.&lt;/p&gt; 
+</pre>
+ผลลัพธ์  
+<pre class="Bd">
+    <h1 class = "g" style="color:blue;">A Blue Heading</h1>
+    <p style="color:red;">A red paragraph.</p> 
+</pre>
+<h2>Internal CSS</h2>
+    จะตกแต่งแค่หน้าเว็บนั้นๆ หน้าเดียว โดยกำหนดค่าใน Element &lt;style&gt; ในส่วนของ &lt;head&gt;
+ตัวอย่าง
+<pre class="Bd">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;style&gt; 
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p &gt;This is a paragraph.&lt;/p&gt; 
+
+    &lt;/body&gt;
+    &lt;/html&gt;    
+</pre>
+<h2>External CSS</h2>
+    ตกแต่งหน้าเว็บนั้นๆ ได้หลายๆ หน้า โดยลิงก์ไฟล์ css เข้ามาใน HTML ในส่วนของ &lt;head&gt;
+ตัวอย่าง
+<pre class="Bd">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel="stylesheet" href="styles.css"&gt; 
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p &gt;This is a paragraph.&lt;/p&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt;    
+</pre>
+โค้ดภายในไฟล์ styles.css
+<pre class="Bd">
+    body {
+        background-color: powderblue;
+      }
+      h1 {
+        color: blue;
+      }
+      p {
+        color: red;
+      }  
+</pre>
+<h2>CSS Colors, Fonts and Sizes</h2>
+    - property color ใช้กำหนดสีตัวอักษร
+    - property font-family ใช้กำหนดประเภทตัวอักษร
+    - property font-size ใช้กำหนดขนาดตัวอักษร
+    ตัวอย่าง
+<pre class="Bd">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+  }
+  p {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p &gt;This is a paragraph.&lt;/p&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;      
+</pre>
+<h2>CSS Border</h2>
+    การกำหนดค่ากรอบ โดยการใช้ property border ในการกำหนด
+    ตัวอย่าง
+<pre class="Bd">
+    p {
+        border: 2px solid powderblue;
+      }     
+</pre>
+<h2>CSS Padding</h2>
+    กำหนดขนาดช่องว่างระหว่างข้อความภายในกับกรอบ โดยการใช้ property padding ในการกำหนด
+    ตัวอย่าง
+<pre class="Bd">
+    p {
+        border: 2px solid powderblue;
+        padding: 30px;
+      }   
+</pre>
+<h2>CSS Margin</h2>
+    กำหนดระยะห่างภายนอกกรอบ โดยการใช้ property margin ในการกำหนด
+    ตัวอย่าง
+<pre class="Bd">
+    p {
+        border: 2px solid powderblue;
+        margin: 50px;
+      }
+</pre>
+<h2>Link to External CSS</h2>
+    การอ้างอิงไฟล์
+    - ตัวอย่างใช้ URL ในการลิงก์ไปหา CSS เว็บไซต์อื่น เช่น &lt;link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt;
+    - ตัวอย่างลิงก์ไปหา CSS ในเว็บไซต์ตัวเอง เช่น  &lt;link rel="stylesheet" href="/html/styles.css" &gt;
+    - ตัวอย่างลิงก์ไปหา CSS ในเว็บไซต์ตัวเองที่อยู่ในโฟลเดอร์เดียวกัน เช่น  &lt;link rel="stylesheet" href="styles.css"&gt;
+    
+</pre>
 </pre>
 </div>
 </body>
