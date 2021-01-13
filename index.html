@@ -28,7 +28,7 @@
         .Bl{
             background-color: #ffffff;
             padding: 20px;
-            margin: 40px;
+            margin: 30px;
             display: block;
             width: 75%;
         }
@@ -37,7 +37,7 @@
             background-color: #F5FFFA;
             font-family:courier;
         }
-        
+
     </style>
 </head>
 <body bgcolor = "#b8b3b"> 
@@ -707,7 +707,54 @@ h1 {
     - ตัวอย่างใช้ URL ในการลิงก์ไปหา CSS เว็บไซต์อื่น เช่น &lt;link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt;
     - ตัวอย่างลิงก์ไปหา CSS ในเว็บไซต์ตัวเอง เช่น  &lt;link rel="stylesheet" href="/html/styles.css" &gt;
     - ตัวอย่างลิงก์ไปหา CSS ในเว็บไซต์ตัวเองที่อยู่ในโฟลเดอร์เดียวกัน เช่น  &lt;link rel="stylesheet" href="styles.css"&gt;
-    
+</pre>
+</pre>
+</div>
+<h1>HTML Links</h1>
+<div class="Bl">
+<pre>
+    HTML Links เรียกว่า ไฮเปอร์ลิงก์ (Hyperlinks) เมื่อคลิกลิงก์แล้วเบราว์เซอร์จะเปิดหน้าใหม่ตาม URL ของลิงก์นั้น ในการสร้างลิงก์จะใช้ Tag &lt;a&gt;
+ดังนี้ &lt;a href="url"&gt;link text&lt;/a&gt;
+<h2>The target Attribute</h2>
+    - _self เปิดหน้าต่างใหม่ หรือแท็บใหม่
+    - _blank เปิดในหน้าต่างเดิม เเละเฟรมเดิม
+    - _parent เปิดในหน้าต่างเดิม
+    - _top เปิดในหน้าต่างเดิมแบบเต็มหน้า และยกเลิกเฟรมทั้งหมด
+<div class="Bd">
+ตัวอย่าง : &lt;a href="https://www.w3schools.com/" target="_blank"&gt;Visit W3Schools!&lt;/a&gt; 
+ผลลัพธ์ :  <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> 
+</div>
+</pre>
+<h2>Use an Image as a Link</h2>
+<pre>เมื่อมีการกดคลิกที่รูปจะทำการไปยังลก์ที่ได้ระบุไว้</pre>
+<pre>ตัวอย่าง 
+<div class="Bd">    &lt;a href="default.asp"&gt;
+    &lt;img src="doraemon2.jpg" alt="HTML tutorial" style="width:42px;height:42px;"&gt;
+    &lt;/a&gt;
+</div>
+ผลลัพธ์ 
+<div class="Bd">
+    <a href="index.html">
+    <img src="doraemon2.jpg" alt="" >
+    </a> 
+</div>
+<h2>Button as a Link</h2>
+<pre>เมื่อมีการกดคลิกที่ปุ่มจะทำการไปยังลก์ที่ได้ระบุไว้</pre>
+<pre>ตัวอย่าง 
+<pre class="Bd">&lt;button onclick="document.location='default.asp'"&gt;HTML Tutorial&lt;/button&gt;
+</pre>
+ผลลัพธ์ 
+<div class="Bd"><button onclick="document.location='default.asp'">HTML Tutorial</button> 
+</div>
+<h2>Button as a Link</h2>
+<pre>ตัวอย่าง 
+<pre class="Bd">&lt;a href="https://phimbun-issawilanon.github.io" 
+    title="Go to HTML section"&gt;HTML Tutorial&lt;/a&gt;
+</pre>
+ผลลัพธ์ 
+<div class="Bd"><a href="https://phimbun-issawilanon.github.io" title="Go to HTML section">HTML Tutorial</a>  
+</div>
+</div>
 </pre>
 </pre>
 </div>
