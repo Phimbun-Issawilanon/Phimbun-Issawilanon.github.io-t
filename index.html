@@ -37,12 +37,36 @@
             background-color: #F5FFFA;
             font-family:courier;
         }
-
+        .m{
+            float: right;
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 30px;
+            display: block;
+            width: 15%;
+            position: fixed;
+            top: 130px;
+            right:10px;
+            
+        }
     </style>
 </head>
-<body bgcolor = "#b8b3b"> 
+<body bgcolor = "#b8b3b">
+    <div class="m">
+        <p><a href="#c1">HTML Elements</a></p>
+        <p><a href="#c2">HTML Attributes</a></p>
+        <p><a href="#c3">HTML Headings</a></p>
+        <p><a href="#c4">HTML Paragraphs</a></p>
+        <p><a href="#c5">HTML Styles</a></p>
+        <p><a href="#c6">HTML Formatting</a></p>
+        <p><a href="#c7">HTML Quotation</a></p>
+        <p><a href="#c8">HTML Comment</a></p>
+        <p><a href="#c9">HTML Colors</a></p>
+        <p><a href="#c10">HTML CSS</a></p>
+        <p><a href="#c11">HTML Links</a></p>
+    </div> 
     <p class="Bl"> &emsp;HTML ย่อมาจาก Hypertext Markup Language ซึ่งเป็นภาษาคอมพิวเตอร์ที่ไว้ใช้เเสดงผลในเว็บบราวเซอร์</p> <!--&emsp; คือย่อหน้า-->
-    <h1>HTML Elements</h1>
+    <h1 id="c1">HTML Elements</h1>
     <div class="Bl">
     <p> ใน html จะประกอบไปด้วย elements หลายๆ ตัว โดยที่จะต้องมี Tag เปิดและปิด <br> 
         &emsp;- Tag เปิดจะมีชื่อ elements ในเครื่องหมาย &lt;...&gt; <br>  <!-- &lt; คือ < และ &gt; คือ > -->
@@ -101,7 +125,7 @@
     </p>
 </div>
     <hr>
-    <h1>HTML Attributes</h1>
+    <h1 id="c2">HTML Attributes</h1>
     <div class="Bl">
     <p> Attributes เป็นการระบุข้อมูลเพิ่มเติมของ Elements โดยจะระบุชื่อและค่า( name="value")ใน Tag เปิดเท่านั้น</p>
     <h2>The href Attribute</h2>
@@ -195,7 +219,7 @@
     <p> &emsp; สามารใช้ Single หรือ Double Quotes ก็ได้ เเต่ส่วนมากจะนิยมใช้ Double Quotes</p>
     </div>
     <hr>
-    <h1>HTML Headings</h1>
+    <h1 id="c3">HTML Headings</h1>
     <div class="Bl">
     <p> การสร้างหัวข้อ โดยระบุ Tag &lt;h1&gt;(หัวข้อใหญ่สุด) ถึง &lt;h6&gt;(หัวข้อเล็กสุด)<br>
         ตัวอย่าง
@@ -222,7 +246,7 @@
 </div>
     <hr>
     <div class="Bl">
-    <h1>HTML Paragraphs</h1>
+    <h1 id="c4">HTML Paragraphs</h1>
     <p>
         การที่เราระบุ Tag &lt;p&gt; เป็นการระบุย่อหน้า ซึ่งจะทำการเพิ่มบรรทัดว่างก่อนและหลังเนื้อหาที่เราพิมพ์ <br>
         ตัวอย่าง
@@ -346,7 +370,7 @@ Oh, bring back my Bonnie to me.
     </p>
 </div>
     <hr>
-    <h1>HTML Styles</h1>
+    <h1 id="c5">HTML Styles</h1>
     <div class="Bl">
     <p> &emsp;เป็นการตกเเต่งหน้าเว็บ เช่น สี, ตัวอักษร เเละขนาด เป็นต้น</p>
     <h2>The HTML Style Attribute</h2>
@@ -413,7 +437,7 @@ Oh, bring back my Bonnie to me.
     <p class ="Bd" style="text-align:center;" >This is a paragraph.</p>
 </div>
     <hr>
-    <h1>HTML Formatting</h1>
+    <h1 id="c6">HTML Formatting</h1>
     <div class="Bl">
     <p>การกำหนดรูปแบบข้อความ</p>
     <h2>HTML Formatting Elements</h2>
@@ -460,7 +484,7 @@ Oh, bring back my Bonnie to me.
     </pre>
 </div>
     <hr>
-    <h1>HTML Quotation</h1>
+    <h1 id="c7">HTML Quotation</h1>
     <div class="Bl">
     <p>&emsp;ข้อความอ้างอิง</p>
     <h2>HTML &lt;blockquote&gt; for Quotations</h2>
@@ -557,7 +581,7 @@ USA
 </pre>
 </div>
 <hr>
-<h1>HTML Comment</h1>
+<h1 id="c8">HTML Comment</h1>
 <div class="Bl">
 <pre> 
     คอมเมนต์ ในการอธิบายโค้ดเพิ่มเติมเพื่อให้เข้าใจ โดยจะไม่มีผลต่อการแสดงผลบนเว็บ โดยจะมีลักษณะการพิมพ์ดังนี้
@@ -565,7 +589,7 @@ USA
 </pre>
 </div>
 <hr>
-<h1>HTML Colors</h1>
+<h1 id="c9">HTML Colors</h1>
 <div class="Bl">
 <pre> 
     เราสามารถกำหนดสีได้ 3 วิธีดังนี้
@@ -580,7 +604,7 @@ USA
         ผลลัพธ์ : <i style="color: #FF0000;">ข้อความนี้สีแดง</i>
 </pre>
 </div>
-<h1>HTML CSS</h1>
+<h1 id="c10">HTML CSS</h1>
 <div class="Bl">
 <pre> 
     css ย่อมาจาก  Cascading Style Sheets โดยจะทำหน้าที่บ่งบอกรูปการเเสดงผล 
@@ -710,7 +734,7 @@ h1 {
 </pre>
 </pre>
 </div>
-<h1>HTML Links</h1>
+<h1 id="c11">HTML Links</h1>
 <div class="Bl">
 <pre>
     HTML Links เรียกว่า ไฮเปอร์ลิงก์ (Hyperlinks) เมื่อคลิกลิงก์แล้วเบราว์เซอร์จะเปิดหน้าใหม่ตาม URL ของลิงก์นั้น ในการสร้างลิงก์จะใช้ Tag &lt;a&gt;
