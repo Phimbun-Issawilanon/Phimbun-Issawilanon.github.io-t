@@ -604,6 +604,7 @@ USA
         ผลลัพธ์ : <i style="color: #FF0000;">ข้อความนี้สีแดง</i>
 </pre>
 </div>
+<hr>
 <h1 id="c10">HTML CSS</h1>
 <div class="Bl">
 <pre> 
@@ -734,6 +735,7 @@ h1 {
 </pre>
 </pre>
 </div>
+<hr>
 <h1 id="c11">HTML Links</h1>
 <div class="Bl">
 <pre>
@@ -762,6 +764,7 @@ h1 {
     <img src="doraemon2.jpg" alt="" >
     </a> 
 </div>
+</pre>
 <h2>Button as a Link</h2>
 <pre>เมื่อมีการกดคลิกที่ปุ่มจะทำการไปยังลก์ที่ได้ระบุไว้</pre>
 <pre>ตัวอย่าง 
@@ -770,6 +773,7 @@ h1 {
 ผลลัพธ์ 
 <div class="Bd"><button onclick="document.location='default.asp'">HTML Tutorial</button> 
 </div>
+</pre>
 <h2>Button as a Link</h2>
 <pre>ตัวอย่าง 
 <pre class="Bd">&lt;a href="https://phimbun-issawilanon.github.io" 
@@ -778,10 +782,16 @@ h1 {
 ผลลัพธ์ 
 <div class="Bd"><a href="https://phimbun-issawilanon.github.io" title="Go to HTML section">HTML Tutorial</a>  
 </div>
-</div>
 </pre>
+<h2>Create Bookmarks</h2>
+<pre>ใช้สำหรับการไปยังหัวข้อเรื่องต่างๆ ในหน้าเว็บ โดยมีขั้นตอนดังนี้
+    1.กำหนด id ใน Element เช่น &lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;    
+    2.สร้างลิงก์ในหน้าเดียวกัน โดยการกำหนดค่าเป็น # แล้วตามด้วยชื่อ id ที่เราตั้งไว้ใน Attribute href 
+    เช่น &lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;   
+    *ถ้าเกิดลิงก์และบุ๊คมาร์คอยู่คนละหน้า ให้เราใส่ #id ตามหลัง url ดังนี้ &lt;a href="html_demo.html#C4"&gt;Jump to Chapter 4&lt;/a&gt;
 </pre>
 </div>
+
 </body>
 </body>
 </html>
