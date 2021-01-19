@@ -791,6 +791,35 @@ h1 {
     *ถ้าเกิดลิงก์และบุ๊คมาร์คอยู่คนละหน้า ให้เราใส่ #id ตามหลัง url ดังนี้ &lt;a href="html_demo.html#C4"&gt;Jump to Chapter 4&lt;/a&gt;
 </pre>
 </div>
+<hr>
+<h1>HTML Images</h1>
+<div class="Bl">
+<pre>
+    ในการใส่รูปภาพ จะใช้ Tag &lt;img&gt; โดยจะระบุที่อยู่ไฟล์รูปใน attribute src 
+- width ระบุความกว้างรูป
+- height ระบุความสูงรูป
+- alt ใส่ข้อความอธิบาย เมื่อรูปภาพไม่ขึ้น
+</pre>
+<h2>Image Floating</h2>
+<pre>
+    ใช้ property float ของ css มาจัดรูปให้อยู่ด้านซ้าย-ขวาของข้อความ
+ตัวอย่าง
+<div class="Bd">&lt;p&gt; &lt;img src="doraemon.jpg" alt="Doraemon" style="float:right;width:100px;height:100px;&gt;
+The image will float to the right of the text. &lt;/p&gt;   
+
+&lt;p&gt; &lt;img src="doraemon.jpg" alt="Doraemon" style="float:left;width:100px;height:100px;&gt;
+The image will float to the left of the text. &lt;/p&gt;  
+</div>
+ผลลัพธ์
+<div class="Bd"><pre> <img src="doraemon.jpg" alt="Doraemon" style="float:right;width:100px;height:100px;">
+The image will float to the right of the text.       
+
+            <img src="doraemon.jpg" alt="Doraemon" style="float:left;width:100px;height:100px;">
+The image will float to the left of the text.  
+</pre>
+    </div>
+</pre>
+</div>
 
 </body>
 </body>
