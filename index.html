@@ -64,6 +64,9 @@
         <p><a href="#c9">HTML Colors</a></p>
         <p><a href="#c10">HTML CSS</a></p>
         <p><a href="#c11">HTML Links</a></p>
+        <p><a href="#c12">HTML Images</a></p>
+        <p><a href="#c13">HTML Table</a></p>
+        <p><a href="#c14">HTML Lits</a></p>
     </div> 
     <p class="Bl"> &emsp;HTML ย่อมาจาก Hypertext Markup Language ซึ่งเป็นภาษาคอมพิวเตอร์ที่ไว้ใช้เเสดงผลในเว็บบราวเซอร์</p> <!--&emsp; คือย่อหน้า-->
     <h1 id="c1">HTML Elements</h1>
@@ -792,7 +795,7 @@ h1 {
 </pre>
 </div>
 <hr>
-<h1>HTML Images</h1>
+<h1 id="c12">HTML Images</h1>
 <div class="Bl">
 <pre>
     ในการใส่รูปภาพ จะใช้ Tag &lt;img&gt; โดยจะระบุที่อยู่ไฟล์รูปใน attribute src 
@@ -821,7 +824,7 @@ The image will float to the left of the text.
 </pre>
 </div>
 <hr>
-<h1>HTML Tables</h1>
+<h1 id="c13">HTML Tables</h1>
 <div class="Bl">
 <pre>
     - Tag &lt;table&gt; จะใช้ในการสร้างตาราง  
@@ -864,6 +867,44 @@ property อื่นๆ ของ css ดังนี้
 การรวมเซลล์
     - แนวนอน จะใช้ Attribute colspan แล้วใส่ค่าเป็นจำนวนคอลัมน์ถัดไปที่ต้องการรวม
     - แนวตั้ง จะใช้ Attribute rowspan แล้วใส่ค่าเป็นจำนวนแถวถัดไปที่ต้องการรวม
+</pre>
+</div>
+<hr>
+<h1 id = "c14">HTML Lists</h1>
+<div class="Bl">
+<h2>Unordered HTML List</h2>
+<pre> 
+    เป็นสร้างรายการแบบไม่เรียงลำดับ โดยจะใช้ Tag &lt;ul&gt; และแต่ละข้อจะใช้ Tag &lt;li&gt; ซึ่งจะมี bullets (วงกลมสีดำ) 
+ตัวอย่าง
+<div class="Bd">
+&lt;ul&gt;
+    &lt;li&gt;Coffee&lt;/li&gt;
+    &lt;li&gt;Tea&lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+</div>
+ผลลัพธ์
+<div class="Bd"><ul><li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li></ul> 
+</div>
+</pre>
+<h2>Ordered HTML List</h2>
+<pre> 
+    เป็นสร้างรายการแบบเรียงลำดับ โดยจะใช้ Tag &lt;ol&gt; และแต่ละข้อจะใช้ Tag &lt;li&gt; ซึ่งจะมีตัวเลขเรียงลำดับ 
+ตัวอย่าง
+<div class="Bd">
+&lt;ol&gt;
+    &lt;li&gt;Coffee&lt;/li&gt;
+    &lt;li&gt;Tea&lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+</div>
+ผลลัพธ์
+<div class="Bd"><ol><li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li></ol> 
+</div> 
 </pre>
 </div>
 
