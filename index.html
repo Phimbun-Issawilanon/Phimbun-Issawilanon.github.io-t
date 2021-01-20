@@ -820,6 +820,52 @@ The image will float to the left of the text.
     </div>
 </pre>
 </div>
+<hr>
+<h1>HTML Tables</h1>
+<div class="Bl">
+<pre>
+    - Tag &lt;table&gt; จะใช้ในการสร้างตาราง  
+    - Tag &lt;tr&gt; เเต่ละเเถวของตาราง
+    - Tag &lt;th&gt; หัวคอลัมน์ โดยที่ตัวอักษรเป็นตัวหนา และจะอยู่กึ่งกลาง
+    - Tag &lt;td&gt; สร้างเซลล์ใส่ข้อมูล
+ตัวอย่าง
+<div class="Bd">
+&lt;table style = "width:80%" border= 1px&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Phimbun&lt;/td&gt;
+        &lt;td&gt;Issawilanon&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</div>
+ผลลัพธ์
+<div class="Bd">
+    <table style = "width:80%" border= 1px >
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Phimbun</td>
+            <td>Issawilanon</td>
+        </tr>
+    </table>
+</div>
+ในการใส่หัวเรื่อง (Caption) จะใช้ Tag &lt;caption&gt;
+property อื่นๆ ของ css ดังนี้
+    - border ใส่กรอบตาราง ถ้าไม่ตั้งค่าไว้ ก็จะไม่แสดงกรอบ
+    - border-collapse กรอบเส้นเดียว
+    - padding เพิ่มระยะห่างภายในเซลล์ ถ้าเราไม่ได้ตั้งค่าไว้มันจะเท่ากับศูนย์
+    - text-align ข้อความหัวคอลัมน์ชิดซ้าย 
+    - border-spacing ข้อความหัวคอลัมน์ชิดซ้าย
+การรวมเซลล์
+    - แนวนอน จะใช้ Attribute colspan แล้วใส่ค่าเป็นจำนวนคอลัมน์ถัดไปที่ต้องการรวม
+    - แนวตั้ง จะใช้ Attribute rowspan แล้วใส่ค่าเป็นจำนวนแถวถัดไปที่ต้องการรวม
+</pre>
+</div>
 
 </body>
 </body>
