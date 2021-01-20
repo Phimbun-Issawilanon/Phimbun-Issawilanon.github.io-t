@@ -93,7 +93,7 @@
         <a href="js.html" class="dropbtn">JavaScript</a>
     </div> 
     <div class="vertical-menu">
-        <a href="#" class="active">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="#j1">JavaScript Where To</a>
         <a href="#j2">JavaScript Output</a>
         <a href="#j3">JavaScript Statements</a>
@@ -122,7 +122,97 @@
         เราสามารถใส่สคริปต์ใน &lt;head&gt; หรือ &lt;body&gt;ก็ได้
     </pre>
     </div>
+<hr> 
+<h1 id="j2">JavaScript Output</h1>
+<div class="Bl">
+<h2>Using innerHTML</h2>
+<pre>
+    จะใช้ document.getElementById(id) โดย id จะเป็นตัวกำหนดตัว HTML element 
+และproperty innerHTML จะกำหนด HTML content
+</pre>
+<div class="Bd"><pre>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
     
+    &lt;h1&gt;My First Web Page&lt;/h1&gt;
+    &lt;p&gt;My First Paragraph&lt;/p&gt;
+    &lt;p id="demo"&gt;&lt;/p&gt;
+    
+    &lt;script&gt;
+    document.getElementById("demo").innerHTML = 5 + 6;
+    &lt;/script&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt
+</pre>
+ผลลัพธ์
+</div>
+<div class="Bd">
+    <h1>My First Web Page</h1>
+    <p>My First Paragraph</p>
+    <p id="demo"></p>
+    <script>
+    document.getElementById("demo").innerHTML = 5 + 6;
+    </script>
+</div>
+<h2>Using document.write()</h2>
+<pre>
+    ใช้ document.write( ) ซึ่งในการใช้ หลังจากที่ตัว HTML document ถูกเรียกใช้งาน จะทำให้เหลือแต่ข้อมูลที่อยู่ใน document.write() เท่านั้น อันอื่นๆ จะถูกลบ
+ตัวอย่าง
+</pre>
+<div class="Bd"><pre>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+    
+    &lt;h1&gt;My First Web Page&lt;/h1&gt;
+    &lt;p&gt;My First Paragraph&lt;/p&gt;
+    
+    &lt;script&gt;
+    document.write(5 + 6);
+    &lt;/script&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt
+</pre>
+</div>
+<h2>Using window.alert()</h2>
+<pre>
+    เป็นกล่องเเจ้งเตือน pop up
+ตัวอย่าง
+</pre>
+<div class="Bd"><pre>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+    
+    &lt;h1&gt;My First Web Page&lt;/h1&gt;
+    &lt;p&gt;My First Paragraph&lt;/p&gt;
+    
+    &lt;script&gt;
+    window.alert(5 + 6);
+    &lt;/script&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt
+</pre>
+</div>
+<h2>Using console.log()</h2>
+<pre>
+    เป็นการแสดงข้อความออกมาบน console ใน browser
+ตัวอย่าง
+</pre>
+<div class="Bd"><pre>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+    
+    &lt;script&gt;
+    console.log(5 + 6);
+    &lt;/script&gt;
+    
+    &lt;/body&gt;
+    &lt;/html&gt
+</pre>
+</div>
+</div>
 
 </body>
 </html>
