@@ -157,7 +157,7 @@
 </div>
 <h2>Using document.write()</h2>
 <pre>
-    ใช้ document.write( ) ซึ่งในการใช้ หลังจากที่ตัว HTML document ถูกเรียกใช้งาน จะทำให้เหลือแต่ข้อมูลที่อยู่ใน document.write() เท่านั้น อันอื่นๆ จะถูกลบ
+    จะใช้ document.write() ซึ่งในเมธอดนี้จะมีข้อมูลอยู่ เเละเมื่อ HTML document ถูกเรียกใช้งาน จะทำให้ HTML ทั้งหมดถูกลบ เหลือแต่ข้อมูลที่อยู่ใน document.write() เท่านั้น 
 ตัวอย่าง
 </pre>
 <div class="Bd"><pre>&lt;!DOCTYPE html&gt;
@@ -248,9 +248,29 @@
 <h2>JavaScript Line Length and Line Breaks</h2>
     เพื่อให้โค้ดที่เขียนนั้นอ่านได้ง่าย ส่วนใหญ่จะหลีกเลี่ยงการเขียนโค้ดที่มีความยาวเกินกว่า 80 ตัวอักษรภายในบรรทัดเดียวกัน
 <h2>JavaScript Code Blocks</h2>
-    JavaScript statements สามารถจัดกลุ่มรวมกันในบล็อค โดยขะใช้เครื่องหมายปีกกา {} (Curly Brackets)
+    JavaScript statements สามารถจัดกลุ่มรวมกันในบล็อค โดยจะใช้เครื่องหมายปีกกา {} (Curly Brackets)
 </pre>
 </div>
+<hr>
+<h1 id="j4">JavaScript Syntax</h1>
+<div class="Bl">
+<pre>
+<h2>JavaScript Literals</h2>
+1. Numbers สามารถเขียนได้ทั้งจำนวนเต็ม และทศนิยม 
+2. Strings สามารถใช้ '(single quote) หรือ  " (double quote) ก็ได้
 
+<h2>JavaScript Variables</h2>
+    JavaScript จะใช้แค่คีย์เวิร์ด var ตัวเดียวเพื่อประกาศตัวแปร เช่น
+    var x;
+    x = 6;
+<h2>JavaScript Operators</h2>
+    ใช้เครื่องหมาย + - * / ทางคณิตศาสตร์มนการคำนวณค่า และใช้ = เพื่อกำหนดค่าให้ตัวแปร
+<h2>JavaScript Comments</h2>
+    ในการคอมเมนต์ อธิบายโค้ดเพิ่มเติมเพื่อให้เข้าใจ โดยจะไม่มีผลต่อการแสดงผลบนเว็บ โดยจะมีลักษณะการพิมพ์ดังนี้
+    // จะคอมเม้นต์ 1 บรรทัด เเละสามารถคอมเม้นหลายๆ บรรทัด โดยใช้ /* ไว้ด้านหน้าสุด เเละ */ หลังสุด
+</pre>
+</div>
+<hr>
+<h1>JavaScript Comments</h1>
 </body>
 </html>
