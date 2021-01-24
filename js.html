@@ -101,8 +101,8 @@
         <a href="#j5">JavaScript Comments</a>
         <a href="#j6">JavaScript Variables</a>
         <a href="#j7">JavaScript Operators</a>
-        <a href="#j8">JavaScript Arithmetic</a>
-        <a href="#j9"></a>
+        <a href="#j8">JavaScript Data Types</a>
+        <a href="#j9">JavaScript Functions</a>
         <a href="#j10"></a>
        
     </div> 
@@ -273,6 +273,7 @@
 <hr>
 <h1 id="j5">JavaScript Comments</h1>
 <div class="Bl">
+<pre>
     - คอมเม้นต์บรรทัดเดียว จะใช้ // ข้างหน้าข้อความ เช่น //ข้อความที่จะคอมเม้นต์
     - คอมเม้นต์หลายบรรทัด จะใช้/* ไว้ด้านหน้าสุด เเละ */ หลังสุดของข้อความ เช่น 
       /*ข้อความคอมเม้นต์บรรทัดที่ 1
@@ -282,6 +283,7 @@
 <hr>
 <h1 id="j6">JavaScript Variables</h1>
 <div class="Bl">
+<pre>
     JavaScript จะใช้แค่คีย์เวิร์ด var ตัวเดียวเพื่อประกาศตัวแปร และในการตั้งชื่อตัวเเปรตัวเเรก ต้องขึ้นด้วยตัวอักษรภาษาอังกฤษ(A-Z or a-z) เครื่องหมายดอลลาร์ ($)
     หรือขีดล่าง (_) เช่น
     var x = 5;
@@ -289,8 +291,140 @@
     var _x = 2;
 </pre>
 </div>
-
-
+<hr>
+<h1 id="j7">JavaScript Operators</h1>
+<div class="Bl">
+    <pre>
+<h2>JavaScript Arithmetic Operators</h2>
+<table style = "width:80%" border= 1px>
+    <tr>
+        <th>Operator</th>
+        <th>ความหมาย</th>
+    </tr>
+    <tr>
+        <td>+</td>
+        <td>บวก</td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>ลบ</td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>คูณ</td>
+    </tr>
+    <tr>
+        <td>/</td>
+        <td>หาร</td>
+    </tr>
+    <tr>
+        <td>**</td>
+        <td>ยกกำลัง</td>
+    </tr>
+    <tr>
+        <td>%</td>
+        <td>Modulus (หารเอาเศษ)</td>
+    </tr>
+    <tr>
+        <td>++</td>
+        <td>เพิ่มค่าทีละ 1</td>
+    </tr>
+    <tr>
+        <td>--</td>
+        <td>ลดค่าทีละ 1</td>
+    </tr>
+</table>
+<h2>JavaScript Assignment Operators</h2>
+<table style = "width:80%" border= 1px>
+    <tr>
+        <th>Operator</th>
+        <th>ตัวอย่าง</th>
+        <th>ความหมาย</th>
+    </tr>
+    <tr>
+        <td>=</td>
+        <td>x = y</td>
+        <td>x = y</td>
+    </tr>
+    <tr>
+        <td>+=</td>
+        <td>x += y</td>
+        <td>x = x+y</td>
+    </tr>
+    <tr>
+        <td>-=</td>
+        <td>x -= y</td>
+        <td>x = x-y</td>
+    </tr>
+    <tr>
+        <td>*=</td>
+        <td>x *= y</td>
+        <td>x = x*y</td>
+    </tr>
+    <tr>
+        <td>/=</td>
+        <td>x /= y</td>
+        <td>x = x/y</td>
+    </tr>
+    <tr>
+        <td>%=</td>
+        <td>x %= y</td>
+        <td>x = x%y</td>
+    </tr>
+    <tr>
+        <td>**=</td>
+        <td>x **= y</td>
+        <td>x = x**y</td>
+    </tr>
+</table>
+<h2>JavaScript String Operators</h2>
+    เป็นการบวกหรือนำข้อความมาต่อกัน ซึ่งระหว่างข้อความกับข้อความ หรือจะเป็นข้อความกับตัวเลข ก็จะได้เป็นข้อความทั้ง2มารวมกันเป็นประโยค เช่น
+- var txt1 = "John";
+  var txt2 = "Doe";
+  var txt3 = txt1 + " " + txt2; --> จะได้ผลลัพธ์ดังนี้ John Doe
+  txt1 += "Wick"; --> จะได้ผลลัพธ์ดังนี้ John Wick
+- var z = "Hi" + 5; จะได้ผลลัพธ์ดังนี้ Hi5
+<h2>JavaScript Comparison Operators</h2>
+<table style = "width:80%" border= 1px>
+    <tr>
+        <th>Operator</th>
+        <th>ความหมาย</th>
+    </tr>
+    <tr>
+        <td>==</td>
+        <td>เท่ากับ</td>
+    </tr>
+    <tr>
+        <td>===</td>
+        <td>เท่ากับ</td>
+    </tr>
+    <tr>
+        <td>!=</td>
+        <td>ไม่เท่ากับ</td>
+    </tr>
+    <tr>
+        <td>!==</td>
+        <td>ไม่เท่ากับ</td>
+    </tr>
+    <tr>
+        <td>&gt;</td>
+        <td>มากกว่า</td>
+    </tr>
+    <tr>
+        <td>&lt;</td>
+        <td>น้อยกว่า</td>
+    </tr>
+    <tr>
+        <td>&gt;=</td>
+        <td>มากกว่าหรือเท่ากับ</td>
+    </tr>
+    <tr>
+        <td>&lt;=</td>
+        <td>น้อยกว่าหรือเท่ากับ</td>
+    </tr>
+</table>
+<h2>JavaScript Logical Operators</h2>
+    JavaScript มี logical operator คือ && (และ) , || (หรือ) และ! นิเสธ
 </pre>
 </div>
 
