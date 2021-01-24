@@ -427,6 +427,39 @@
     JavaScript มี logical operator คือ && (และ) , || (หรือ) และ! นิเสธ
 </pre>
 </div>
+<hr>
+<h1 id ="j8">JavaScript Data Types</h1>
+<div class="Bl">
+<pre>
+    Javascript เป็น Dynamic Typed คือประกาศตัวแปรโดยไม่ต้องบอก Type ว่าเป็น Int Float หรือ String 
+<h2>JavaScript Strings</h2>
+    Strings สามารถใช้ '(single quote) หรือ  " (double quote) ก็ได้
+<h2>JavaScript Numbers</h2>
+    สามารถเขียนได้ทั้งจำนวนเต็มและ ทศนิยม
+ตัวเขที่มีค่ามากและน้อยมากอาจจเขียนได้ในรูปแบบดังนี้เพื่อให้ดูง่ายขึ้น
+    var y = 123e5;      จะได้ผลลัพธ์ดังนี้ --> 12300000
+    var z = 123e-5;     จะได้ผลลัพธ์ดังนี้ --> 0.00123
+<h2>JavaScript Booleans</h2>
+    boolean ใช้เก็บข้อมูล 2 ค่าคือ true และ false 
+<h2>JavaScript Arrays</h2>
+    ชุดของข้อมูล จะใช้โดยใช้ brackets [] และคั่นแต่ละสมาชิกด้วย comma(,) และในการเข้าถึงของอาร์เรย์ค่าเริ่มต้นของ Index จะมีค่าเท่ากับ 0 เสมอ
+ตัวอย่าง: var cars = ["Saab", "Volvo", "BMW"];
+<h2>JavaScript Objects</h2>
+    จะใช้ปีกกา {} โดยจะเก็บข้อมูลเป็น Key และ Value(เรียกว่า Property) และถ้ามีหลาย Property จะคั่นแต่ละค่าด้วยเครื่องหมาย comma(,)
+ัตัวอย่าง: var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+<h2>The typeof Operator</h2>
+    ตรวจสอบประเภทข้อมูลในตัวแปร ซึ่งจะส่งค่ากลับมาเป็น String ตัวอย่างเช่น
+  - typeof "John"      จะส่งค่ากลับมาเป็น  "string" (สำหรับข้อมูลที่เป็นข้อความ)
+  - typeof 314         จะส่ฃค่ากลับมาเป็น  "number" (สำหรับข้อมูลที่เป็นตัวเลข)
+<h2>Undefined</h2>
+    ตัวแปรที่ประกาศเอาไว้แต่ไม่ได้มีการกำหนดค่าใดๆ เช่น
+    var y; 
+<h2>Empty Values</h2>
+ เป็นตัวแปรสตริงว่าง ตัวอย่างเช่น var car = "";   
+<h2>Null</h2>
+    ตัวแปรที่ไม่มีค่าใดๆเลย ไม่เท่ากับ 0 ไม่เท่ากับสตริงว่าง และไม่สามารถเอาไปใช้ในการคำนวณได้ แต่สามารถนำไปเชตค่าได้ 
+</pre>
+</div>
 
 </body>
 </html>
