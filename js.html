@@ -104,7 +104,7 @@
         <a href="#j8">JavaScript Data Types</a>
         <a href="#j9">JavaScript Functions</a>
         <a href="#j10">JavaScript Objects</a>
-        <a href="#j10">JavaScript Events</a>
+        <a href="#j11">JavaScript Events</a>
        
     </div> 
     <p class="Bl"> &emsp;JavaScript เป็นภาษาโปรแกรมเชิงวัตถุแบบไดนามิก</p> <!--&emsp; คือย่อหน้า-->
@@ -484,6 +484,40 @@ function myFunction(a, b) {
 </div>
 <h2>Local Variables</h2>
     เป็นตัวแปรที่สามารถเรียกได้เฉพาะในฟังก์ชันที่มีการกำหนดตัวแปรไว้ภายในฟังก์ชันนั้นๆ เท่านั้น 
+</pre>
+</div>
+<hr>
+<h1 id="j10">JavaScript Objects</h1>
+<div class="Bl">
+<pre>
+    ตัวแปรที่สามารถเก็บค่าได้หลายค่า โดยเขียนอยู่ในรูปของคู่ name:value และใช้เครื่องหมาย colon ในการคั่นเเต่ละคู่
+ตัวอย่าง
+<div class="Bd">var person = {firstName:"Phimbun", lastName:"Issawilanom", age:19};
+</div>เเละสามารถเขียนหลายบรรทัดได้ดังนี้
+<div class="Bd">var person = {firstName:"Phimbun", 
+              lastName:"Issawilanom", 
+              age:19};
+</div>ตารางแสดง property ของตัวแปร
+<table style = "width:50%" border= 1px>
+    <tr>
+        <th>Property</th>
+        <th>Property Value</th>
+    </tr>
+    <tr>
+        <td>firstName</td>
+        <td>Phimbun</td>
+    </tr>
+    <tr>
+        <td>lastName</td>
+        <td>Issawilanom</td>
+    </tr>
+    <tr>
+        <td>age</td>
+        <td>19</td>
+    </tr>
+</table>
+    ในการการเข้าถึง property ทำได้โดย objectName.propertyName
+ตัวอย่าง person.firstName; ผลลัพธ์ที่ได้คือ --> Phimbun
 </pre>
 </div>
 
