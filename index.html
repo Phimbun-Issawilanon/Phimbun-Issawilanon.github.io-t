@@ -84,6 +84,17 @@
             background-color: #282c28;
             color: white;
         }
+        .city {
+            background-color:  #f2f3b7;
+            color: black;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+        .note {
+            font-size: 120%;
+            color: red;
+        }
     </style>
 </head>
 <body bgcolor = "#b8b3b">
@@ -109,6 +120,9 @@
         <a href="#c13">HTML Table</a>
         <a href="#c14">HTML Lists</a>
         <a href="#c15">HTML Block and Inline Elements</a>
+        <a href="#c16">HTML class Attribute</a>
+        
+        
     </div> 
     <p class="Bl"> &emsp;HTML ย่อมาจาก Hypertext Markup Language ซึ่งเป็นภาษาคอมพิวเตอร์ที่ไว้ใช้เเสดงผลในเว็บบราวเซอร์</p> <!--&emsp; คือย่อหน้า-->
     <h1 id="c1">HTML Elements</h1>
@@ -961,6 +975,84 @@ property อื่นๆ ของ css ดังนี้
 ผลลัพธ์
 <div class="Bd">
 <div style="border: 1px solid black">Hello World</div>
+</div>
+</pre>
+</div>
+<hr>
+<h1 id="c16">HTML class Attribute</h1>
+<div class="Bl">
+<pre>
+<h2>Using The class Attribute</h2>
+    สามารถทำให้ element หลายๆ อันถูกกำหนด style ที่เหมือนกันได้โดยใช้ชื่อ class เดียวกัน
+ตัวอย่าง การใช้ Attribute Class กับBlock
+<div class="Bd">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+.city {
+    background-color:  #f2f3b7;
+    color:  black;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="city"&gt;
+&lt;h2&gt;กรุงเทพมหานคร&lt;/h2&gt;
+&lt;p&gt;กรุงเทพมหานคร เป็นเมืองหลวง&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="city"&gt;
+&lt;h2&gt;นนทบุรี&lt;/h2&gt;
+&lt;p&gt;จังหวัดนนทบุรีจัดเป็นพื้นที่ในเขตปริมณฑลของกรุงเทพมหานคร &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;      
+</div>
+ผลลัพธ์
+<div class="Bd">
+    <div class="city">
+    <h2 >กรุงเทพมหานคร</h2>
+    กรุงเทพมหานคร เป็นเมืองหลวง
+      </div>
+      
+      <div class="city">
+    <h2 >นนทบุรี</h2>
+    จังหวัดนนทบุรีจัดเป็นพื้นที่ในเขตปริมณฑลของกรุงเทพมหานคร 
+      </div>
+</div>
+ตัวอย่าง การใช้ Attribute Class กับInline
+<div class="Bd">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt; 
+.note {
+    font-size: 120%;
+    color: red;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+
+&lt;h1&gt;My &lt;span class="note"&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;
+&lt;p&gt;This is some &lt;span class="note"&gt;important&lt;/span&gt; text.&lt;/p&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;      
+</div>
+
+ผลลัพธ์
+<div class="Bd">
+<h2 class="g">My <span class="note">Important</span> Heading</h1>
+This is some <span class="note">important</span> text.
 </div>
 </pre>
 </div>
