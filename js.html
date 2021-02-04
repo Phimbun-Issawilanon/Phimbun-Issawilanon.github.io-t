@@ -647,6 +647,31 @@ function myFunction(a, b) {
 - ค่าอนันต์หรือ infinity คือค่าที่ไม่มีขอบเขต ไม่มีสิ้นสุด ใน JavaScript จะมีตัวเเปร infinity เก็บค่าดังกล่าว
 </pre>
 </div>
+<h1 id="j14">JavaScript Arrays</h1>
+<div class="Bl">
+<pre>
+    เป็นชนิดข้อมูลออบเจ็กต์แบบหนึ่ง ซึ่งเป็นชุดของข้อมูล โดยจะใช้ brackets [] และคั่นแต่ละสมาชิกด้วย comma(,) และในการเข้าถึงของอาร์เรย์ค่าเริ่มต้นของ Index จะมีค่าเท่ากับ 0 เสมอ
+ตัวอย่าง: var cars = ["Saab", "Volvo", "BMW"];
+เราสามารถสร้างอาร์เรย์ว่าง แล้วค่อยเพิ่มสมาชิกทีหลังได้ ตามตัวอย่างต่อไปนี้
+<div id="Bd">
+     var array = [];
+     array[0] = 1;
+     array[1] = 2;
+</div>
+<h2>The length Property</h2>
+  เป็นการบอกจำนวนสมาชิก 
+ตัวอย่าง: var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.length;   
+ผลลัพธ์: 4
+ซึ่งเราสามารถแก้ไขค่า lenght ได้โดยมีลักษณะดังนี้
+ตัวอย่าง: var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.length;   
+        fruits.lenght = 6;
+ผลลัพธ์: ["Banana", "Orange", "Apple", "Mango",,];
+
+ 
+</pre>
+</div>
 
 </body>
 </html>
