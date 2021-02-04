@@ -105,7 +105,11 @@
         <a href="#j9">JavaScript Functions</a>
         <a href="#j10">JavaScript Objects</a>
         <a href="#j11">JavaScript Events</a>
-       
+        <a href="#j12">JavaScript Strings</a>
+        <a href="#j13">JavaScript Numbers</a>
+        <a href="#j14">JavaScript Arrays</a>
+        <a href="#j15">JavaScript Array Methods</a>
+        <a href="#j16">JavaScript Sorting Arrays</a>
     </div> 
     <p class="Bl"> &emsp;JavaScript เป็นภาษาโปรแกรมเชิงวัตถุแบบไดนามิก</p> <!--&emsp; คือย่อหน้า-->
     <h1 id="j1">JavaScript Where To</h1>
@@ -558,6 +562,79 @@ function myFunction(a, b) {
         <td>เหตุการณ์เมื่อมีการเปิดหน้าเว็บ</td>
     </tr>
 </table>
+</div>
+<h1 id="j12">JavaScript Strings</h1>
+<div class="Bl">
+<pre>
+    Strings สามารถใช้ '(single quote) หรือ  " (double quote) ก็ได้
+ตัวอย่าง
+    - Double quotes คือ var carName1 = "Volvo XC60";  
+    - Single quotesvar คือ carName2 = 'Volvo XC60';  
+และสามารถใช้ทั้งsingle quote เเละ double quote ด้วยกันเช่น  var answer1 = "It's alright";
+<h2>String Length</h2>
+    เราสามารถหาความยาวของ String ได้โดย Property length 
+ตัวอย่าง
+    var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var sln = txt.length;   
+    document.getElementById("demo").innerHTML = sln;
+ซึ่งผลลัพธ์คือ 26
+ตัวอักษรพิเศษ
+<table style = "width:50%" border= 1px>
+    <tr>
+        <th>ตัวอักษรพิเศษ</th>
+        <th>ความหมาย</th>
+    </tr>
+    <tr>
+        <td>\b</td>
+        <td>backspace</td>
+    </tr>
+    <tr>
+        <td>\f</td>
+        <td>เลื่อนกระดาษไปอีก 1 หน้า</td>
+    </tr>
+    <tr>
+        <td>\n</td>
+        <td>ขึ้นบรรทัดใหม่</td>
+    </tr>
+    <tr>
+        <td>\r</td>
+        <td>carriage return</td>
+    </tr>
+    <tr>
+        <td>\t</td>
+        <td>เว้นวรรคย่อหน้าด้วยการกด tab</td>
+    </tr>
+    <tr>
+        <td>\v</td>
+        <td>vertical tab</td>
+    </tr>
+    <tr>
+        <td>\"</td>
+        <td>เครื่องหมายคำพูดคู่</td>
+    </tr>
+    <tr>
+        <td>\'</td>
+        <td>เครื่องหมายคำพูดเดี่ยว</td>
+    </tr>
+</table>
+    นอกจากนี้เราสามารถเขียนสตริงได้มากกว่า 1 บรรทัดโดยการใช้เครื่องหมาย \ ต่อท้ายเเต่ละข้อความ
+ตัวอย่าง
+    document.getElementById("demo").innerHTML = "Hello \
+                                                Dolly!";
+<h2>JavaScript String Methods</h2>
+    - lenght ใช้หาความยาวของสตริง
+    - indexOf() ใช้ค้นหาข้อตวามในสตริง เมื่อเจอครั้งเเรกจะรีเทิร์นค่าออกมาเ็นตำแหน่ง index
+      ตัวอย่าง: var str = "Please locate where 'locate' occurs!";
+              var pos = str.indexOf("locate");
+      ผลลัพธ์: 7
+    - lastIndexOf() ใช้ค้นหาข้อความที่เจอลำดับสุดท้ายและจะรีเทิร์นค่าออกมาเ็นตำแหน่ง index
+      ตัวอย่าง: var str = "Please locate where 'locate' occurs!";
+              var pos = str.lastIndexOf("locate");
+      ผลลัพธ์: 21
+    - trim() จะมีไว้ในการตัดช่องว่าง ที่วางไว้ด้านหน้าและหลังข้อความทิ้งไป
+      ตัวอย่าง: console.log(" Phimbun Issawilanon ".trim() );
+      ผลลัพธ์: "Phimbun Issawilanon"
+</pre>
 </div>
 
 </body>
