@@ -39,7 +39,7 @@
             font-family:courier;
         }
         .topm {
-            background-color: rgb(56, 58, 61);
+            background-color: #282c28;
             overflow: hidden;
         }
 
@@ -519,6 +519,45 @@ function myFunction(a, b) {
     ในการการเข้าถึง property ทำได้โดย objectName.propertyName
 ตัวอย่าง person.firstName; ผลลัพธ์ที่ได้คือ --> Phimbun
 </pre>
+</div>
+<hr>
+<h1 id="j11">JavaScript Events</h1>
+<div class="Bl">
+<p>
+    Event คือ เหตุการณ์ที่เกิดขึ้นขณะผู้ใช้กระทำกับวัตถุหรือสิ่งต่าง ๆ ที่เกิดขึ้นบนจอภาพ เช่น การคลิกปุ่ม การวางเมาส์หรือการกดแป้นพิมพ์ เป็นต้น 
+ตัวอย่าง onClick เป็นเหตุการณ์ที่ผู้ใช้ใช้เมาส์คลิกที่ปุ่ม
+&lt;button onclick="document.getElementById('demo').innerHTML = Date()"&gt;The time is?&lt;/button&gt;
+</p>
+<table style = "width:50%" border= 1px>
+    <tr>
+        <th>Event</th>
+        <th>ความหมาย</th>
+    </tr>
+    <tr>
+        <td>onchange</td>
+        <td>เหตุการณ์ เมื่อเลือกตัวเลือก เช่นจาก dropdown</td>
+    </tr>
+    <tr>
+        <td>onclick</td>
+        <td>เหตุการณ์ เมื่อเราคลิก</td>
+    </tr>
+    <tr>
+        <td>onmouseover</td>
+        <td>เหตุการณ์ เมื่อเรานำเมาส์ไปวาง</td>
+    </tr>
+    <tr>
+        <td>onmouseout</td>
+        <td>เหตุการณ์ ที่เมื่อเรานำเมาส์ออก</td>
+    </tr>
+    <tr>
+        <td>onkeydown</td>
+        <td>เหตุการณ์เมื่อกดปุ่มบนคีย์บอร์ด</td>
+    </tr>
+    <tr>
+        <td>onload</td>
+        <td>เหตุการณ์เมื่อมีการเปิดหน้าเว็บ</td>
+    </tr>
+</table>
 </div>
 
 </body>
